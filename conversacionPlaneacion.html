@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HARO asistente</title>
+    <script>
+      var BOTMAKER_VAR = {
+        conversation_id: "conv_planeacion_v1",
+      };
+
+      document.addEventListener("DOMContentLoaded", function (event) {
+        let js = document.createElement("script");
+        js.type = "text/javascript";
+        js.async = 1;
+        js.src = "https://go.botmaker.com/rest/webchat/p/5J1CACLPPH/init.js";
+        document.getElementById("chat-space").appendChild(js);
+        //código a ejecutar cuando existe la certeza de que el DOM está listo para recibir acciones
+        // document.body.appendChild(js);
+      });
+
+      // (function () {
+      //   let js = document.createElement("script");
+      //   js.type = "text/javascript";
+      //   js.async = 1;
+      //   js.src = "https://go.botmaker.com/rest/webchat/p/5J1CACLPPH/init.js";
+      //   document.body.appendChild(js);
+      // })();
+    </script>
+  </head>
+  <body>
+    <div id="chat-space"></div>
+  </body>
+</html>
